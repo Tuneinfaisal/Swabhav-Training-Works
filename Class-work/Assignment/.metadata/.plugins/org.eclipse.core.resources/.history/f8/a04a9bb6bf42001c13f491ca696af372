@@ -1,0 +1,32 @@
+package com.monocept;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class MyFrame{
+	
+	public static void main(String[] args)
+	{
+		JButton myButton = new JButton("Hello");
+		JFrame myFrame = new JFrame("Faisal");
+		
+		myButton.setBounds(100,100,200,200);
+		
+		myFrame.add(myButton);
+		myFrame.setSize(500,300);
+		myFrame.setLayout(null);
+		myFrame.setVisible(true);
+		myFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+	
+//	public MyFrame()
+//	{
+//		button.setB
+//		
+//		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//		this.setSize(20,10);
+//		this.setLayout(null);
+//		this.setVisible(true);
+//	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.monocept.model.Student&apos; to &apos;StudentHashSet&apos;&#x0D;&#x0A;- Original project: &apos;set-concept-app&apos;&#x0D;&#x0A;- Original element: &apos;com.monocept.model.Student&apos;&#x0D;&#x0A;- Renamed element: &apos;com.monocept.model.StudentHashSet&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Student&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.monocept.model{Student.java[Student" matchStrategy="1" name="StudentHashSet" qualified="false" references="true" similarDeclarations="false" stamp="1634790675217" textual="false" version="1.0"/>
+</session>

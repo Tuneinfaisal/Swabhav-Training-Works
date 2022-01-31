@@ -1,0 +1,18 @@
+package com.ooad.chap2;
+
+public class Remote {
+	
+	public DogDoor door;
+	
+	public Remote(DogDoor door)
+	{
+		this.door = door;
+	}
+	
+	public void pressButton()
+	{
+		System.out.println("Pressing the button...");
+		if(this.door == open)
+	}
+
+}

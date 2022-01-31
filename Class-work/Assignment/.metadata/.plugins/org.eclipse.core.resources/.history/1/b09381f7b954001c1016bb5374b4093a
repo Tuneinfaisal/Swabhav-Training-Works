@@ -1,0 +1,27 @@
+package com.monocept;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class Async {
+	
+	public static void main(String[] args) {
+		JFrame myFrame = new JFrame("Async");
+		JButton helloButton = new JButton("Hello");
+		JButton printButton = new JButton("Print");
+		JButton printAsyncButton = new JButton("printAsync");
+		
+		helloButton.setBounds(40,80,20,30);
+		printButton.setBounds(100,80,20,30);
+		printAsyncButton.setBounds(200,80,20,30);
+		
+		myFrame.add(helloButton);
+		myFrame.add(printButton);
+		myFrame.add(printAsyncButton);
+		myFrame.setSize(500,300);
+		myFrame.setLayout(null);
+		myFrame.setVisible(true);
+		myFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+
+}

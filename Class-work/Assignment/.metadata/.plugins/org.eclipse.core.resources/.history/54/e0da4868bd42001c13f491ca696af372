@@ -1,0 +1,14 @@
+package com.monocept;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class MyFrame extends JFrame{
+	
+	JButton botton = new JButton("Hello");
+	public MyFrame()
+	{
+		
+	}
+
+}

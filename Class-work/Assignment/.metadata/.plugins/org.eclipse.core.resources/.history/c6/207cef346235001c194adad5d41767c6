@@ -1,0 +1,42 @@
+package com.monocept.model;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+
+public class EmployeeTxtTest {
+	
+	static ArrayList<String> items = new ArrayList<String>();
+	
+	public static void main(String[] args) throws IOException
+	{
+		extractDetails();
+		printDetails();
+	}
+	
+	public static void extractDetails() throws IOException
+	{
+//		int i = 0;
+		File f = new File("C:\\Users\\tunei\\Desktop\\SwabhavTechTraining\\Classes\\Class work\\Assignment\\employee-data-analyzer-app\\dataFile.txt");
+		
+		BufferedReader br = new BufferedReader(new FileReader(f));
+		String output;
+		while((output = br.readLine()) != null)
+		{
+			items.add(output);
+//			i++;
+		}
+		br.close();
+	}
+	
+	public static void printDetails()
+	{
+		for(int i=0;i<items.size();i++)
+		{
+			System.out.println(items.get(i));
+		}
+	}
+
+}

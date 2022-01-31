@@ -1,0 +1,7 @@
+package com.monocept.chap8;
+
+public class AbstractClass {
+	NewPhone myPhone = new NewPhone();
+	
+
+}

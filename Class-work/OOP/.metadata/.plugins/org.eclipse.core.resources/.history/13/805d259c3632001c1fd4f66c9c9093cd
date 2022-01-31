@@ -1,0 +1,59 @@
+package com.monocept.model;
+
+//public class StudentComparator implements Comparable<StudentComparator>{
+public class StudentComparator implements SortBy{
+	
+	public String name;
+	public int roll;
+	public double cgpa;
+	
+	public StudentComparator(String name,int roll, double cgpa)
+	{
+		this.name = name;
+		this.roll = roll;
+		this.cgpa = cgpa;
+	}
+	
+	@Override
+	public String sortbyName()
+	{
+		return name;
+		
+	}
+
+	@Override
+	public int sortbyRoll()
+	{
+		return roll;
+		
+	}
+
+	@Override
+	public double sortbyCgpa()
+	{
+		return cgpa;
+		
+	}
+
+//	@Override
+//	public int compareTo(StudentComparator o)
+//	{
+//		return name.compareTo(o.name);
+//	}
+	
+	public String getName()
+	{
+		return name;
+	}
+	
+	public int getRoll()
+	{
+		return roll;
+	}
+	
+	public double getCgpa()
+	{
+		return cgpa;
+	}
+
+}

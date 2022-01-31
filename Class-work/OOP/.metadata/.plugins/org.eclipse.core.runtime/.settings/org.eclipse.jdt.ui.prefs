@@ -1,0 +1,9 @@
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="java.lang.Enum"><rhs name\="com.monocept.model.ColourOptoin"/><rhs name\="com.monocept.model.GenderType"/><rhs name\="com.monocept.ocp.violation.FestivalType"/><rhs name\="com.dip.violation.ErrorLogType"/></lhs><lhs name\="java.lang.constant.Constable"><rhs name\="com.monocept.model.ColourOptoin"/><rhs name\="com.monocept.model.GenderType"/><rhs name\="com.monocept.ocp.violation.FestivalType"/><rhs name\="com.dip.violation.ErrorLogType"/></lhs><lhs name\="com.monocept.model.ColourOptoin"><rhs name\="com.monocept.model.ColourOptoin"/></lhs><lhs name\="com.monocept.model.GenderType"><rhs name\="com.monocept.model.GenderType"/></lhs><lhs name\="com.monocept.ocp.violation.FixedDeposit"><rhs name\="com.monocept.ocp.violation.FixedDeposit"/></lhs><lhs name\="com.monocept.ocp.violation.FestivalType"><rhs name\="com.monocept.ocp.violation.FestivalType"/></lhs><lhs name\="com.monocept.ocp.solution.IFestivalRatePolicyInterface"><rhs name\="com.monocept.ocp.solution.NormalRatePolicy"/><rhs name\="com.monocept.ocp.solution.EidRatePolicy"/></lhs><lhs name\="com.monocept.ocp.solution.NormalRatePolicy"><rhs name\="com.monocept.ocp.solution.NormalRatePolicy"/></lhs><lhs name\="com.monocept.ocp.solution.EidRatePolicy"><rhs name\="com.monocept.ocp.solution.EidRatePolicy"/></lhs><lhs name\="com.dip.violation.TaxCalculator"><rhs name\="com.dip.violation.TaxCalculator"/></lhs><lhs name\="com.dip.violation.ErrorLogType"><rhs name\="com.dip.violation.ErrorLogType"/></lhs></history>
+content_assist_number_of_computers=12
+content_assist_proposals_background=255,255,255
+content_assist_proposals_foreground=0,0,0
+eclipse.preferences.version=1
+org.eclipse.jdt.ui.formatterprofiles.version=21
+spelling_locale_initialized=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

@@ -1,0 +1,16 @@
+package com.monocept.model;
+
+import java.io.FileReader;
+
+public class Read {
+	public static void main(String[] args) throws Exception
+	{
+		
+	}
+	
+	public static void read() throws Exception
+	{
+		FileReader fRead = new FileReader("C:\\Users\\tunei\\Desktop\\names.txt");
+	}
+
+}

@@ -1,0 +1,23 @@
+package com.monocept;
+
+import java.util.Arrays;
+
+public class ArrayStreamTest {
+	
+	public static void main(String[] args)
+	{
+		caseStudy1();
+	}
+	
+	public static void caseStudy1()
+	{
+		String[] names = new String[]{"Faisal","Ankit","Asif","Nongamba"};
+		Arrays.stream(names).filter(n->n.contains("A"))
+				.sorted()
+				.forEach(System.out::println);
+		Arrays.stream(names).filter(n->n.contains("A"))
+				.sorted()
+				.forEach(n->System.out.println(n.toUpperCase()));
+	}
+
+}

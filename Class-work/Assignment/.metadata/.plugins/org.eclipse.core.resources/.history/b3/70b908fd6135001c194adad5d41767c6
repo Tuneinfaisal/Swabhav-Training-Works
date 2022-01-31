@@ -1,0 +1,57 @@
+package com.monocept.model;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.URL;
+import java.net.URLConnection;
+import java.util.ArrayList;
+
+public class EmployeeUrlTest {
+	
+	static ArrayList<String> items = new ArrayList<String>();
+	
+	public static void main(String[] args) throws IOException
+	{
+		URL url = new URL("https://swabhav-tech.firebaseapp.com/emp.txt ");
+		printDetails(url);
+		
+//		System.out.println();
+//		System.out.println("Content ->");
+		extractUrlContents("https://swabhav-tech.firebaseapp.com/emp.txt");
+		printContent();
+	}
+
+	private static void printDetails(URL u)
+	{
+		System.out.println("Information about the file ->");
+		System.out.println("Protocol: "+u.getProtocol());
+	    System.out.println("Host Name: "+u.getHost());
+	    System.out.println("Port Number: "+u.getPort());
+	    System.out.println("File Name: "+u.getFile());
+	}
+	
+	private static void extractUrlContents(String theUrl) throws IOException
+	{
+		URL url = new URL(theUrl);
+	    URLConnection urlConnection = url.openConnection();
+	  
+	    BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));  
+	    String line;  
+	    while ((line = bufferedReader.readLine()) != null)  
+	    {  
+	    	items.add(line);
+	    }  
+	    bufferedReader.close();
+	}
+	
+	public static void printContent()
+	{
+		System.out.println();
+		System.out.println("Content ->");
+		for(int i=0;i<items.size();i++)
+		{
+			System.out.println(items.get(i));
+		}
+	}
+}

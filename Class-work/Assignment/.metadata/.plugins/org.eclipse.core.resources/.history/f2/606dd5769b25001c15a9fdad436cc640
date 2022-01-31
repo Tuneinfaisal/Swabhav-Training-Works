@@ -1,0 +1,19 @@
+package com.monocept.model;
+
+import java.io.File;
+import java.io.FileWriter;
+
+public class WriteAppend {
+
+	public static void main(String[] args) throws Exception
+	{
+		File f = new File("names.txt");
+		
+	}
+	
+	public static void write(String s, File f) throws Exception
+	{
+		FileWriter fWrite = new FileWriter(f);
+	}
+
+}

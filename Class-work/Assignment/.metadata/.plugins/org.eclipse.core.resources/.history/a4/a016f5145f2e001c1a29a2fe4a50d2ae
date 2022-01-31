@@ -1,0 +1,17 @@
+package test;
+
+import model.Student;
+
+public class ObjectCreation {
+	
+	public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException
+	{
+		// Creating an object by using newInstance method of Class class.
+		Student s1 = (Student) Class.forName("model.Student").newInstance();
+//		Student s1 = Student.class.newInstance();
+				
+		System.out.println(s1.id);
+//		System.out.println(s1.hashCode());
+	}
+
+}

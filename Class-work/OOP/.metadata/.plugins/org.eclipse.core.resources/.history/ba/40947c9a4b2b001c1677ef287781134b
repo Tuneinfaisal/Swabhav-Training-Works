@@ -1,0 +1,32 @@
+package com.monocept.test;
+
+import com.monocept.model.Man;
+import com.monocept.model.Woman;
+
+public class Test {
+	
+	public static void main(String[] args)
+	{
+		Man x = new Man();
+		Woman y = new Woman();
+		
+		atTheMovie(x);
+		atTheParty(x);
+		
+//		atTheParty(y);
+//		atTheParty(y);
+	}
+
+	private static void atTheMovie(Man x)
+	{
+		x.wish();
+		x.depart();
+	}
+
+	private static void atTheParty(Man x)
+	{
+		x.wish();
+		x.depart();
+	}
+
+}

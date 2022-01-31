@@ -1,0 +1,11 @@
+package com.monocept;
+
+public class Main {
+
+	public static void main(String[] args)
+	{
+		SecurityService ss = new SecurityService();
+				
+		LoginFrame lf = new LoginFrame(ss.getLoginInfo());
+	}
+}

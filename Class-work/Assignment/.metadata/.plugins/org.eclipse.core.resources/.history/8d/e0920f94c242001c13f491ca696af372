@@ -1,0 +1,40 @@
+package com.monocept;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class MyFrame{
+	
+	public static void main(String[] args)
+	{
+		JFrame myFrame = new JFrame("Faisal");
+		JButton myButton1 = new JButton("Hello");
+		JButton myButton2 = new JButton("Bye");
+		
+		myFrame.add(myButton1);
+		myFrame.add(myButton2);
+		myFrame.setSize(420,400);
+		myFrame.setLayout(null);
+		myFrame.setVisible(true);
+		myFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		myButton1.setBounds(100,100,200,100);
+		myButton2.setBounds(100,200,200,100);
+//		myButton.addActionListener(new ActionListener()
+//		{
+//			@Override
+//			public void actionPerformed(ActionEvent e)
+//			{
+//				System.out.println("You clicked Hello");
+//			}
+//		});
+		
+		myButton1.addActionListener((e) -> System.out.println("You clicked Hello (with lambda exp."));
+		myButton2.addActionListener((e) -> System.out.println("You clicked Bye (with lambda exp."));
+		
+	}
+
+}

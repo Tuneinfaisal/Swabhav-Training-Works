@@ -1,0 +1,8 @@
+package com.monocept.model;
+
+public class FileHandlingDemo {
+	public static void main(String[] args)
+	{
+		writeUTF("Demo");
+	}
+}

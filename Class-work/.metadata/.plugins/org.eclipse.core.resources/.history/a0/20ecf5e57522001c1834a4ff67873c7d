@@ -1,0 +1,14 @@
+package com.monocept.chap8;
+
+public class NewPhone {
+//	public void call()
+//	{
+//		System.out.println("Calling");
+//	}
+
+	public void call() {
+		// TODO Auto-generated method stub
+		System.out.println("Calling");
+	}
+
+}

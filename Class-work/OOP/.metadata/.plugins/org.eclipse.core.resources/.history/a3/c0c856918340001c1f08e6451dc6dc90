@@ -1,0 +1,14 @@
+package com.monocept;
+
+import java.lang.reflect.Array;
+import java.util.List;
+
+public class ForEach {
+	
+	public static void main(String[] args)
+	{
+		List<String> argsList = Arrays.aslist(args);
+		argsList.forEach(x->System.out.println(x));
+	}
+	
+}

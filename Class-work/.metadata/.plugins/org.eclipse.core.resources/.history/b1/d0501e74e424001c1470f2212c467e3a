@@ -1,0 +1,14 @@
+package com.monocept.chap10;
+
+import java.lang.Math.abs();
+
+public class Math {
+	public static void main(String[] args)
+	{
+		int a = 500;
+		int b = 600;
+		int c = Math.abs(a,b);
+		
+	}
+
+}

@@ -1,0 +1,13 @@
+package com.monocept.model;
+
+import java.io.DataOutputStream;
+import java.io.FileOutputStream;
+
+public class FileHandlingDemo {
+	public static void main(String[] args)
+	{
+		FileOutputStream fos = new FileOutputStream("names.txt");
+		DataOutputStream dos = new DataOutputStream(fos);
+		dos.writeUTF("Demo");
+	}
+}

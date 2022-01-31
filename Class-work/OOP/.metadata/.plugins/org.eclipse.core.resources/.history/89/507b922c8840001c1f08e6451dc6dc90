@@ -1,0 +1,13 @@
+package com.monocept;
+
+public class ArrayStreamTest {
+	
+	public static void caseStudy1()
+	{
+		String[] names = new String[]{"Faisal","Ankit","Asif","Nongamba"};
+		Arrays.stream(names).filter(n->n.contains("A"))
+				.sorted()
+				.forEach(System.out::println);
+	}
+
+}

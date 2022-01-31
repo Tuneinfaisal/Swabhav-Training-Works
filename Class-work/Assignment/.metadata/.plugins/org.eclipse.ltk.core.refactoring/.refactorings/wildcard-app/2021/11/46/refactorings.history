@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.monocept.TypeErasure&apos; to &apos;TypeErasureTest&apos;&#x0D;&#x0A;- Original project: &apos;wildcard-app&apos;&#x0D;&#x0A;- Original element: &apos;com.monocept.TypeErasure&apos;&#x0D;&#x0A;- Renamed element: &apos;com.monocept.TypeErasureTest&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;TypeErasure&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.monocept{TypeErasure.java[TypeErasure" matchStrategy="1" name="TypeErasureTest" qualified="false" references="true" similarDeclarations="false" stamp="1636432774051" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,24 @@
+package com.monocept.test;
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+
+import com.monocept.model.Cell;
+import com.monocept.model.Mark;
+
+public class CellTest {
+
+	@Test
+	public void checkIfCellIsInitiallyEmpty()
+	{
+		Cell c = new Cell();
+//		boolean empty = false;
+		Mark expectedMark = Mark.EMPTY;
+//		boolean result = c.isEmpty();
+		assertEquals(expectedMark, c.isEmpty());
+		
+		Cell c1 = new Cell();
+//		assert
+	}
+}

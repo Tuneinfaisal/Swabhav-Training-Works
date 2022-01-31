@@ -1,0 +1,17 @@
+package com.monocept.model;
+
+import java.io.File;
+
+public class WriteAppend {
+
+	public static void main(String[] args)
+	{
+		File f = new File()
+	}
+	
+	public static void write(String s, File f) throws Exception
+	{
+		
+	}
+
+}

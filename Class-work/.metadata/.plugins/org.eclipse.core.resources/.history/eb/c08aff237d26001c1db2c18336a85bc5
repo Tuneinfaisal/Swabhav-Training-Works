@@ -1,0 +1,17 @@
+package com.monocept.chap11;
+
+public class Washer {
+
+	public static void main(String[] args) {
+		Washer a = new Washer();
+		a.foo();
+
+	}
+
+	private void foo() throws ClothingException
+	{
+		laundry.doLaundry();
+		
+	}
+
+}

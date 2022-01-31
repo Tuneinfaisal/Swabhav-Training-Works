@@ -1,0 +1,33 @@
+package com.monocept.basic;
+
+public class EvenOddTest {
+	public void getOdd()
+	{
+		for(int i=0;i<100;i++)
+		{
+			if(i%2 != 0)
+			{
+				System.out.println(i);
+			}
+		}
+	}
+	
+	public void getEven()
+	{
+		for(int i=0;i<50;i++)
+		{
+			if(i%2 == 0)
+			{
+				System.out.println(i);
+			}
+		}
+	}
+	
+	public static void main()
+	{
+		EvenOddTest eot = new EvenOddTest(String[] args);
+		eot.getOdd();
+		eot.getEven();
+	}
+
+}

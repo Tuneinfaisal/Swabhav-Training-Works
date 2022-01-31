@@ -1,0 +1,11 @@
+package com.monocept.chap10;
+
+import java.lang.*;
+
+public class Math {
+	public static void main(String[] args)
+	{
+		int x = Math.min(24,240);
+	}
+
+}

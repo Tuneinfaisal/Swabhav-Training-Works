@@ -1,0 +1,13 @@
+package com.monocept.chap8;
+
+abstract class Phone1 {
+	public void call()
+	{
+		System.out.println("Calling");
+	}
+	
+	public abstract void message();
+	public abstract void video();
+	public abstract void music();
+
+}

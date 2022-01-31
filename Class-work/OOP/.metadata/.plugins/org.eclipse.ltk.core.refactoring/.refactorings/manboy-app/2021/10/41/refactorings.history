@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;foo&apos; in &apos;com.monocept.constructor2.Parent&apos; to &apos;f&apos;&#x0D;&#x0A;- Original project: &apos;manboy-app&apos;&#x0D;&#x0A;- Original element: &apos;com.monocept.constructor2.Parent.foo&apos;&#x0D;&#x0A;- Renamed element: &apos;com.monocept.constructor2.Parent.f&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;foo&apos;" flags="589826" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src&lt;com.monocept.constructor2{Parent.java[Parent^foo" name="f" references="true" setter="false" stamp="1633605167685" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,34 @@
+package com.monocept.model.test;
+
+import com.monocept.model.Circle;
+
+public class CircleArayTest {
+	
+	public static void main(String[] args)
+	{
+		Circle c1 = new Circle();
+		c1.setRadius(2.2f);
+		
+		Circle c2 = new Circle();
+		c2.setRadius(3.3f);
+		
+		Circle c3 = new Circle();
+		c3.setRadius(4.4f);
+		
+		Circle[] manyC = new Circle[3];
+		manyC[0] = c1;
+		manyC[1] = c2;
+		manyC[2] = c3;
+		
+		printDetails(c1, manyC);
+	}
+	
+	public static void printDetails(Circle circle, Circle[] manyC)
+	{
+		for(Circle items : manyC)
+		{
+			System.out.println(items);
+		}
+	}
+
+}

@@ -1,0 +1,23 @@
+package com.monocept;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class MyFrame extends JFrame{
+	
+	JButton botton = new JButton("Hello");
+	
+	public static void main(String[] args)
+	{
+		MyFrame mf = new MyFrame();
+	}
+	
+	public MyFrame()
+	{
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setSize(20,10);
+		this.setLayout(null);
+		this.setVisible(true);
+	}
+
+}

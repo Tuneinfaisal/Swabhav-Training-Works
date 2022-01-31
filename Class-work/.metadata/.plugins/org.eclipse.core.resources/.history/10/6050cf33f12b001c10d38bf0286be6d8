@@ -1,0 +1,12 @@
+package com.ooad.chap2;
+
+public class Remote {
+	
+	public boolean door;
+	
+	public Remote(door)
+	{
+		this.door = door;
+	}
+
+}

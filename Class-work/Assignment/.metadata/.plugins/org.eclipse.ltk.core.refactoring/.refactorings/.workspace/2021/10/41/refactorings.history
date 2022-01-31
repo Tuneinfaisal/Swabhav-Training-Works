@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;object-r&apos; to &apos;object-reflection&apos;&#x0D;&#x0A;- Original element: &apos;object-r&apos;&#x0D;&#x0A;- Renamed element: &apos;object-r&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;object-r&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=object-r" name="object-reflection" references="true" stamp="1633580644729" version="1.0"/>
+</session>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.monocept.ForEach&apos; to &apos;ForEachTest&apos;&#x0D;&#x0A;- Original project: &apos;functional-programming-and-stream-app&apos;&#x0D;&#x0A;- Original element: &apos;com.monocept.ForEach&apos;&#x0D;&#x0A;- Renamed element: &apos;com.monocept.ForEachTest&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ForEach&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.monocept{ForEach.java[ForEach" matchStrategy="1" name="ForEachTest" qualified="false" references="true" similarDeclarations="false" stamp="1636370619165" textual="false" version="1.0"/>
+</session>

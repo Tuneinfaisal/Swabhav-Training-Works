@@ -1,0 +1,10 @@
+package com.monocept;
+
+public class ArrayStreamTest {
+	
+	public static void caseStudy1()
+	{
+		String[] names = new String[]{"Faisal","Ankit","Asif","Nongamba"};
+	}
+
+}

@@ -1,0 +1,21 @@
+package com.monocept.test;
+
+import com.monocept.IOperation;
+
+public class Test {
+	
+	public static void main(String[] args)
+	{
+		IOperation op1 = new IOperation()
+				{
+
+					@Override
+					public double doMathOpreration(int a, int b)
+					{
+						return a+b;
+					}
+					
+				};
+	}
+
+}

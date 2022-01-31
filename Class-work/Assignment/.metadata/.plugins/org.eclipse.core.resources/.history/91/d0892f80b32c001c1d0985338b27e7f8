@@ -1,0 +1,35 @@
+package com.monocept.model;
+
+import java.util.*;
+
+public class CRUDoperationHashSet {
+	
+	public static void main(String[] args)
+	{
+		Set<String> s = new HashSet<>();
+		
+		// Create
+		s.add("Faisal");
+		s.add("Ankit");
+		s.add("Asif");
+		s.add("Nongamba");
+		s.add("Faisal");
+		
+		// Read
+		System.out.println("Reading the whole set");
+		System.out.println(s);
+		System.out.println();
+		
+		System.out.println("Reading from iteration");
+		for(String str : s)
+		{
+			System.out.println(str);
+		}
+		System.out.println();
+		
+		// Remove
+		s.remove("Faisal");
+		System.out.println(s);
+	}
+
+}

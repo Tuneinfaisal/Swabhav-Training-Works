@@ -1,0 +1,25 @@
+package com.monocept.test;
+
+import com.monocept.IOperation;
+
+public class Test {
+	
+	public static void main(String[] args)
+	{
+		IOperation op1 = new IOperation()
+				{
+
+					@Override
+					public double doMathOpreration(int a, int b)
+					{
+						return a+b;
+					}
+					
+				};
+				
+				System.out.println(op1.doMathOpreration(10,20));
+				IOperation op2 = (a,b)-> a*b;
+				System.out.println(op2.doMathOpreration(10,20));
+	}
+
+}

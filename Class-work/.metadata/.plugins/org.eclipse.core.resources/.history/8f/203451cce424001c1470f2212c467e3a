@@ -1,0 +1,17 @@
+package com.monocept.chap10;
+
+import java.util.*;
+
+public class Math {
+	public static void main(String[] args)
+	{
+//		int a = 500;
+//		int b = 600;
+//		int c = Math.abs(a,b);
+		
+		int r2 = 1 + (int) (Math.random() * 5);
+		int randomDice = 1 + (int) (Math.random() * 6);
+		
+	}
+
+}

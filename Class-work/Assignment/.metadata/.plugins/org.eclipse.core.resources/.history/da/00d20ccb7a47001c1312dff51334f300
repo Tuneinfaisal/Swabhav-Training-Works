@@ -1,0 +1,14 @@
+package com.monocept;
+
+public class Users {
+	
+	private String userId;
+	private String firstName;
+	private String lastName;
+	private String password;
+	private String email;
+	private String creteDate;
+	
+	
+
+}

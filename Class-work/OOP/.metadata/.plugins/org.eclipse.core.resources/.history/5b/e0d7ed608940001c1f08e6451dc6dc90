@@ -1,0 +1,39 @@
+package com.monocept;
+
+import java.util.Arrays;
+import java.util.regex.Pattern;
+
+public class ArrayStreamTest {
+	
+	public static void main(String[] args)
+	{
+		caseStudy1();
+	}
+	
+	public static void caseStudy1()
+	{
+		String[] names = new String[]{"Faisal","Ankit","Asif","Nongamba"};
+		Arrays.stream(names).filter(n->n.contains("A"))
+				.sorted()
+				.forEach(System.out::println);
+		Arrays.stream(names).filter(n->n.contains("A"))
+				.sorted()
+				.forEach(n->System.out.println(n.toUpperCase()));
+	}
+	
+	public static void caseStudyd2()
+	{
+		String[] manyMarks = {"10","20","30","pqr"};
+		int total = Arrays.stream(manyMarks)
+				.filter(ArrayStreamTest::isNubmer)
+				.mapToInt(x->Integer.parseInt(x))
+				.filter(x->x>25)
+				.sum();
+		System.out.println(total);
+	}
+	private static boolean isNumber(String s)
+	{
+		return Pattern.matches("\\d+",s);
+	}
+
+}

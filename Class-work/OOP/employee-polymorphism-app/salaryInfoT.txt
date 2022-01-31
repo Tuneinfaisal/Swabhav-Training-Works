@@ -1,0 +1,72 @@
+Role = Manager :
+Hra = 48000.0
+Ta = 42000.0
+Da = 36000.0
+Basic salary = 60000.0
+Name = Vishak
+Employee no. = 101
+Annual CTC = 186000.0
+
+Role = Developer :
+Pa = 21000.0
+Pi = 18000.0
+Basic salary = 30000.0
+Name = Rohit
+Employee no. = 111
+Annual CTC = 69000.0
+
+Role = Analyst :
+Perks = 12000.0
+Basic salary = 20000.0
+Name = Mohit
+Employee no. = 121
+Annual CTC = 32000.0
+
+Role = Manager :
+Hra = 48000.0
+Ta = 42000.0
+Da = 36000.0
+Basic salary = 60000.0
+Name = Vishak
+Employee no. = 101
+Annual CTC = 186000.0
+
+Role = Developer :
+Pa = 21000.0
+Pi = 18000.0
+Basic salary = 30000.0
+Name = Rohit
+Employee no. = 111
+Annual CTC = 69000.0
+
+Role = Analyst :
+Perks = 12000.0
+Basic salary = 20000.0
+Name = Mohit
+Employee no. = 121
+Annual CTC = 32000.0
+
+Role = Manager :
+Hra = 48000.0
+Ta = 42000.0
+Da = 36000.0
+Basic salary = 60000.0
+Name = Vishak
+Employee no. = 101
+Annual CTC = 186000.0
+
+Role = Developer :
+Pa = 21000.0
+Pi = 18000.0
+Basic salary = 30000.0
+Name = Rohit
+Employee no. = 111
+Annual CTC = 69000.0
+
+Role = Analyst :
+Perks = 12000.0
+Basic salary = 20000.0
+Name = Mohit
+Employee no. = 121
+Annual CTC = 32000.0
+

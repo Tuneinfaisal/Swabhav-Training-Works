@@ -1,0 +1,29 @@
+package com.monocept.chap10;
+
+import java.util.*;
+//import java.lang.Math.abs();
+
+public class MathTest {
+	public static void main(String[] args)
+	{
+		int a = 500;
+		int b = 600;
+		
+		int min = Math.min(a,b);
+		System.out.println(min);
+		
+		int max = Math.max(a,b);
+		System.out.println(max);
+		
+		int x = (int) (Math.random() * 5);
+		System.out.println(x);
+		
+		int r = Math.round(-24.8f);
+		System.out.println(r);
+		
+		int ab = Math.abs(-240);
+		System.out.println(ab);
+	}
+
+}
+

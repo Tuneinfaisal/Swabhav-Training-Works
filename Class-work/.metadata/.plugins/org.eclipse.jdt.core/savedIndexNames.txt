@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\tunei\Desktop\SwabhavTechTraining\Classes\Class work\.metadata\.plugins\org.eclipse.jdt.core
+204186987.index
+3021556860.index
+3852352763.index
