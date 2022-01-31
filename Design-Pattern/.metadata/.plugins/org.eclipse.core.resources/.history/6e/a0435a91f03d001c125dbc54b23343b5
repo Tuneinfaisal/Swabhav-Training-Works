@@ -1,0 +1,9 @@
+package com.decorator;
+
+public class GoldenHat {
+
+	public GoldenHat(StandardHat standardHat) {
+		// TODO Auto-generated constructor stub
+	}
+
+}

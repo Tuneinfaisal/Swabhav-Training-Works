@@ -1,0 +1,22 @@
+package com.decorator;
+
+public class GoldenHat extends HatDecorator{
+
+	public GoldenHat(Hat hat)
+	{
+		super(hat);
+	}
+
+	@Override
+	public String getName()
+	{
+		return "Premium hat";
+	}
+
+	@Override
+	public int getPrice()
+	{
+		return 200;
+	}
+
+}

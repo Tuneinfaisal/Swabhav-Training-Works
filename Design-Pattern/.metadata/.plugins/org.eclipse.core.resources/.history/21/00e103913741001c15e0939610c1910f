@@ -1,0 +1,11 @@
+package com.monocept;
+
+public class StockListView implements IView{
+
+	@Override
+	public void addStock(IView v) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,12 @@
+package com.decorator;
+
+public class RibbonHat extends HatDecorator{
+
+	public RibbonHat(Hat hat) {
+		super(hat);
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+
+}

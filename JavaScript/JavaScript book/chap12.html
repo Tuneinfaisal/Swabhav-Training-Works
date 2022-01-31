@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>JavaScript chapter 12</title>
+        <h1>All about String</h1>
+    </head>
+
+    <body>
+        <script>
+
+            var text = "this is some text";
+            var moreText = 'I am in single quotes!';
+            alert("This is some more text");
+
+            var initial = "Hello";
+            alert(initial + " world");
+            alert("Hello world");
+
+            var vowels = "aeiou"
+            alert(vowels[2]);
+            alert(vowels.charAt(3));
+
+            for(var i=0;i<vowels.length;i++)
+            {
+                alert(vowels[i]);
+            }
+
+            var stringA = "I'm a simple string";
+            var stringB = "I'm a simple string";
+            alert(stringA + " " + stringB);
+
+            var textA = "Hello";
+            var textB = new String("World");
+            var combine = textA + " Hi " + textB;
+            alert(combine);
+
+            var foo1 = "I have to";
+            var foo2 = "phone and broadband";
+            var foo3 = "by eod.";
+
+            var result = foo1.concat(" recharge my" + " " + foo2 + " " + foo3);
+            alert(result);
+
+            var movie1 = "Parasite is an awesome movie";
+            alert(movie1.slice(0,8));
+            var movie2 = "Parasite is an awesome movie";
+            alert(movie2.slice(0,-5));
+            var movie3 = "Parasite is an awesome movie";
+            alert(movie3.slice(-10,-5));
+
+            var theBigString = "Parasite is an awesome movie!";
+            var newString = theBigString.substr(0,8);
+            alert(newString);
+            alert(theBigString.substr(8));
+
+            var string3 = "That which you can concatenate, you can also split apart.";
+            var splitWord = string3.split(" ");
+            alert(splitWord.length);
+
+            var days = "Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday";
+            var splitWords = days.split(",");
+            alert(splitWords[6]);
+
+            var string4 = "I have to recharge my phone and broadband";
+            alert(string4.indexOf("phone"));
+            var string5 = "I have to recharge my phone and broadband";
+            alert(string5.indexOf("q"));
+            var string6 = "I have to recharge my phone and broadband";
+            alert(string6.lastIndexOf("phone"));
+            var string7 = "I have to recharge my phone and broadband";
+            alert(string7.indexOf("phone",22));
+
+            var phrase = "There are 3 little pigs.";
+            var regexp = /[0–9]/;
+            var numbers = phrase.match(regexp);
+            alert(numbers[0]);
+
+            var string8 = "I'm Batman";
+            alert(string8.toUpperCase());
+            alert(string8.toLowerCase());
+
+        </script>
+    </body>
+</html>

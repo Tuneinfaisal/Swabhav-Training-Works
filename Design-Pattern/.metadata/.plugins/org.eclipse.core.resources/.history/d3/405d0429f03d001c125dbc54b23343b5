@@ -1,0 +1,10 @@
+package com.decorator;
+
+public class RibbonHat {
+	
+	public static void main(String[] args)
+	{
+		Hat h = new RibbonHat(new GoldenHat(new StandardHat()));
+	}
+
+}

@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>JavaScript chapter 14</title>
+        <h1>All about Arrays</h1>
+    </head>
+
+    <body>
+        <script>
+
+            var groceries = ["Milk", "Egg", "Bread", "Sugar", "Salt"];
+            alert(groceries[2]);
+
+            for(var i=0;i<groceries.length;i++)
+            {
+                alert(groceries[i]);
+            }
+
+            groceries.push("Coffee");
+            for(var i=0;i<groceries.length;i++)
+            {
+                alert(groceries[i]);
+            }
+
+            groceries.unshift("Juice");
+            for(var i=0;i<groceries.length;i++)
+            {
+                alert(groceries[i]);
+            }
+
+            groceries.shift();
+            for(var i=0;i<groceries.length;i++)
+            {
+                alert(groceries[i]);
+            }
+
+            alert(groceries.shift());
+            alert(groceries.pop());
+
+            var newArray = groceries.slice(1,4);
+            alert(newArray);
+
+            alert(groceries.indexOf("Sugar",2));
+
+            var bikes = ["Pulsar","Apache","Splender"];
+            var cars = ["Altroz","Magnite","Alto"];
+
+            var bikesAndCars = bikes.concat(cars);
+            alert(bikesAndCars);
+            var bikesAndCars = cars.concat(bikes);
+            alert(bikesAndCars);
+
+        </script>
+    </body>
+</html>

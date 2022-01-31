@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html">Go back to index</a>
+    <button id="btn">Next</button>
+    <p id="show"></p>
+    <script>
+
+        "use strict"
+
+        var nextButton = document.getElementById("btn");
+        var questions = [{id:1, question:"Capital of India ?"},
+                        {id:2, question:"Capital of USA ?"},
+                        {id:3, question:"Capital of England ?"},
+                        {id:4, question:"Capital of China ?"},
+                        {id:5, question:"Capital of Germany ?"}];
+                        
+        nextButton.addEventListener("click",showQuestions);
+        function showQuestions() {
+            for(var i=0;i<questions.length;i++) {
+            console.log(questions[i]);
+            // document.getElementById("show").innerHTML = questions[i];
+            // document.write(questions[i]);
+            }
+            // var i = 0;
+            // while(i<questions.length) {
+            //     nextButton.onclick = () => {
+            //         console.log(questions[i]);
+            //         i++;
+            //     }
+            // }
+        }
+        
+
+    </script>
+</body>
+</html>

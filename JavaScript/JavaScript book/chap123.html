@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>JavaScript chapter 123</title>
+	<h1>All about basics, variables, alert, and function</h1>
+	<style>
+	</style>
+</head>
+
+<body>
+	<script>
+
+		// Variable and alert
+		var alertText = "Hello world.....!!!";
+		alert(alertText);
+
+		var myText;
+		myText = "hello, world!";
+		myText = 99;
+		myText = 4 * 10;
+		myText = true;
+		myText = undefined;
+		alert(myText);
+
+
+		// Functions
+		showDistance(5, 10);
+		showDistance(6, 50);
+		sayHello();
+
+		var distance = getDistance(10,100);
+		alert(distance);
+
+		function showDistance(speed, time)
+		{
+			alert(speed * time)
+		}
+
+		function sayHello()
+		{
+			alert("Hello world.");
+		}
+
+		function getDistance(speed, time)
+		{
+			var distance = speed * time;
+			return distance;
+		}
+
+	</script>
+</body>
+
+</html>

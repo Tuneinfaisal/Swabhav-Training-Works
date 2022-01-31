@@ -1,0 +1,24 @@
+package com.monocept;
+
+import java.util.ArrayList;
+
+public class StatusBar implements IView{
+	
+	ArrayList<Stock> view = new ArrayList<Stock>();
+
+	@Override
+	public void addStock(Stock s)
+	{
+		view.add(s);
+	}
+	
+	public void showPopularStock()
+	{
+		for(Stock s : view)
+		{
+			System.out.println(Stock.getName() + " " + Stock.getPrice());
+			System.out.println(s);
+		}
+	}
+
+}

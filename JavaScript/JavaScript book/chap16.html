@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>JavaScript chapter 16</title>
+        <h1>All about A deeper look at objects</h1>
+    </head>
+
+    <body>
+        <script>
+
+            // var funnyGuy = {};
+            // funnyGuy.toString();
+
+            // var funnyGuy = {};
+            // funnyGuy.firstName = "Akshay";
+            // funnyGuy.lastName = "Kumar";
+
+            // function getName()
+            // {
+            //     return this.firstName;
+            // }
+            // alert(this.getName());
+
+            // var funnyGuy = {};
+            // funnyGuy["firstName"] = "Akshay";
+            // funnyGuy["lastName"] = "Kumar";
+
+            // var actor = {
+            //     firstName: "Akshay",
+            //     lastName: "Kumar",
+
+            //     getName: function()
+            //     {
+            //         return this.firstName + " " + this.lastName;
+            //     }
+            // };
+
+            // var singer = {
+            //     firstName: "Arijit",
+            //     lastName: "Singh",
+
+            //     getName: function ()
+            //     {
+            //         return this.firstName + " " + this.lastName;
+            //     }
+            // };
+
+            // var cricketer = {
+            //     firstName: "Sachin",
+            //     lastName: "Tendulkar",
+
+            //     getName: function ()
+            //     {
+            //         return this.firstName + " " + this.lastName;
+            //     }
+            // };
+
+            // alert(funnyGuy.getName());
+            // alert(singer.getName());
+            // alert(cricketer.getName());
+
+            var person = {
+                getName: function()
+                {
+                    return this.firstName + " " + this.lastName;
+                }
+            }
+
+            var actor = Object.create(person);
+            actor.firstName = "Akshay";
+            actor.lastName = "Kumar";
+
+            var singer = Object.create(person);
+            singer.firstName = "Arijit";
+            singer.lastName = "Singh";
+            
+            var cricketer = Object.create(person);
+            cricketer.firstName = "Sachin";
+            cricketer.lastName = "Tendulkar";
+
+            alert(actor.getName());
+            alert(singer.getName());
+            alert(cricketer.getName());
+
+        </script>
+    </body>
+</html>

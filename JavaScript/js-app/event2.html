@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+
+    <body>
+        <a href="index.html">Go back to Index</a>
+        <button id = "btnRed">Red</button>
+        <button id = "btnBlue">Blue</button>
+        <script>
+
+            document.getElementById("btnRed").addEventListener('click',commonEventHandler);
+            document.getElementById("btnBlue").addEventListener('click',commonEventHandler);
+
+            function commonEventHandler(e)
+            {
+                // console.log(this.id);
+                console.log(e.target.id);
+                if(e.target.id == "btnRed")
+                {
+                    document.bgColor = "Red";
+                }
+                if(e.target.id == "btnBlue")
+                {
+                    document.bgColor = "Blue";
+                }
+            }
+
+        </script>
+    </body>
+</html>

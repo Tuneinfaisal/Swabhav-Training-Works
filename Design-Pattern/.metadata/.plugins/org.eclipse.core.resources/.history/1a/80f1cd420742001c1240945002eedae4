@@ -1,0 +1,7 @@
+package com.monocept;
+
+public interface IView {
+	
+	public void displayStock();
+
+}

@@ -1,0 +1,23 @@
+package com.monocept;
+
+import java.util.ArrayList;
+
+public class StockListView implements IView{
+	
+	ArrayList<Stock> view = new ArrayList<Stock>();
+
+	@Override
+	public void displayStock()
+	{
+		
+	}
+	
+	public void showAllStock()
+	{
+		for(Stock s : view)
+		{
+			System.out.println(s);
+		}
+	}
+
+}

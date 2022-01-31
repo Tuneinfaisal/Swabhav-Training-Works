@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype-Pattern</title>
+</head>
+<body>
+    <a href="index.html">Go back to index</a>
+    <script>
+
+        "use strict"
+        var id;
+        var name;
+        function Customer(id,name) {
+            this.id = id;
+            this.name = name;
+        }
+        Customer.prototype.getDetails = function() {
+            return "id is " + this.id + " name is " + this.name;
+        }
+
+        var c1 = new Customer(101, "Faisal");
+        console.log(c1);
+
+        var c2 = new Customer(102, "Anu");
+        console.log(c2);
+
+        console.log(c1.getDetails());
+        console.log(c2.getDetails());
+
+        console.log(c1.__proto__ == Customer.prototype);
+        console.log(c1.__proto__ == c2.__proto__);
+
+        console.log(Customer.prototype.__proto__ == Object.prototype);
+        console.log(c1.__proto__.__proto__ == Object.prototype);
+
+        var obj1 = {};
+        var obj2 = {};
+        console.log(obj1.__proto__ == obj2.__proto__);
+        console.log(obj1.__proto__ == Object.prototype);
+
+        Object.prototype.foo = function(name) {
+            return "Foo says hello to " + name;
+        }
+
+        console.log(obj1.foo("Faisal"));
+        console.log(c1.foo("Anu"));
+
+    </script>
+
+</body>
+</html>

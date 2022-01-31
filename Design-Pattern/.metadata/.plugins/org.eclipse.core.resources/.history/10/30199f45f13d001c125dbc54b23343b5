@@ -1,0 +1,27 @@
+package com.decorator;
+
+public class GoldenHat implements Hat{
+
+	public GoldenHat(PremiumHat premiumHat) {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public String getName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String getPrice() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String getDescription() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

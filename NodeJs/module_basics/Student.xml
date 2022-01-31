@@ -1,0 +1,23 @@
+<?xml version = "1.0"?>
+
+<StudentData>
+
+<Class9>
+name = Rohit
+roll = 33
+cgpa = 7
+</Class9>
+
+<Class9>
+name = Rahul
+roll = 35
+cgpa = 8
+</Class9>
+
+<Class9>
+<name>Rohit</name>
+<roll>33</roll>
+<cgpa>7</cgpa>
+</Class9>
+
+</StudentData>

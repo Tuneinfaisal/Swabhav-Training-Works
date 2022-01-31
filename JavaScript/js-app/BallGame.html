@@ -1,0 +1,104 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ball Game</title>
+</head>
+
+<body>
+    <style>
+        .btn {
+            border-radius: 100%;
+            border: none;
+            padding: 20px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            outline:auto;
+        }
+        #slider {
+            width: 50%;
+        }
+    </style>
+    <a href="index.html">Go back to Index</a>
+    <h1>Ball Game</h1>
+    <link rel="stylesheet" href="blueballcss.css">
+    <div>
+        <div class="slidergame">
+            <p>Slide this to set the point</p>
+            
+            <input type="range" min="1" max="50" value="20" class="slider" id="slider">
+            <button class="btnOk">Ok</button>
+            <p>Press Ok to start the game</p>
+            <div>
+                <p> Current Value : <span id="outputValue"></span></p>
+                <div class="button-slidergame"></div>
+                <div class="button-container"></div>
+            </div>
+
+            <script>
+                "use strict"
+                var slider = document.getElementById("slider");
+                var output = document.getElementById("outputValue");
+                // var output = 20;
+                const slidergame = document.querySelector(".button-slidergame");
+                const buttonOk = document.querySelector(".btnOk");
+                output.innerHTML = slidergame.value;
+
+                let win = false;
+                let randomNumber = 0;
+                slider.oninput = function () {
+                    output.innerHTML = this.value;
+                    slidergame.innerHTML = ' ';
+                };
+
+                // add event listener
+                buttonOk.addEventListener("click", getBall);
+                function getBall() {
+                    randomNumber = Math.floor(Math.random() * slider.value);
+                    let ab = document.createElement("p");
+                    slidergame.appendChild(ab);
+                    let Timer = 60;
+                    setInterval(function () {
+                        --Timer;
+                        ab.innerHTML = "Time remaining :" + Timer;
+                    }, 1000);
+                    setTimeout(function () {
+                        if (win != true) {
+                            alert("You lost");
+                        }
+                        slidergame.innerHTML = "";
+                    }, 60000);
+                    // console.log(randomNumber);
+                    for (let i = 1; i < slider.value; i++) {
+                        var button = document.createElement("button");
+                        button.setAttribute("class", "btn");
+                        button.textContent = i;
+                        slidergame.appendChild(button);
+                        var count = 0;
+                        button.addEventListener("click", function (e) {
+                            count++;
+                            if (e.target.textContent == randomNumber) {
+                                win = true;
+                                this.style.backgroundColor = "blue";
+                                alert("You won the game in " + count + " attempt.");
+                            }
+                            else if (e.target.textContent < randomNumber)
+                            {
+                                this.style.backgroundColor = "green";
+                            }
+                            else
+                            {
+                                this.style.backgroundColor = "red";
+                            }
+                        });
+                    }
+                }</script>
+        </div>
+    </div>
+</body>
+
+</html>

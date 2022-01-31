@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <a href="index.html">Go back to Index</a>
+    <p id="demo"></p>
+    <form name="myForm" method="get" action="auth.asp" onsubmit="return validateForm()">
+        <table cellspacing="2" align ="center" cellpadding="8">
+            <tr>
+                <td>Enter Name :</td>
+                <td><input name="userName" type="text" placeholder="Enter name here"/></td>
+            </tr>
+            <tr>
+                <td>Enter Password :</td>
+                <td><input name="userPassword" type="password" placeholder="Enter Password here"/></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Login" class="btn" onClick="login()"/>
+                </td>
+            </tr>
+        </table>
+
+    </form>
+
+    <script>
+
+    function validateForm() {
+        var nameValidation = document.forms["myForm"]["name"].value;
+        var passwordValidation = document.forms["myForm"]["password"].value;
+        if (nameValidation == "")
+        {
+            alert("Name is empty");
+            return false;
+        }
+        if(passwordValidation == "")
+        {
+            alert("Password is empty");
+            return false;
+        }
+    }
+
+    // XMLHttpRequest
+    const xhr = new XMLHttpRequest();
+    // console.log(xhr.readyState);
+    xhr.onreadystatechange = function(){
+        // console.log(xhr.readyState);
+        if(xhr.readyState == 4)
+        {
+            if(xhr.status == 200)
+            {
+                console.log(xhr.responseText);
+                // document.getElementById("demo").innerHTML = xhr.responseURL;
+            }
+            if(xhr.status == 404)
+            {
+                console.log("Not found");
+            }
+        }
+    };
+    xhr.open('get','auth.asp',true);
+    xhr.send();
+
+    </script>
+</body>
+</html>
+
+<!--
+0 -> unset
+1 -> open
+2 -> received
+3 -> loading
+4 -> done
+-->

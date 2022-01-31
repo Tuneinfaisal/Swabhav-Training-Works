@@ -1,0 +1,9 @@
+package com.decorator2;
+
+public interface ICarService {
+	
+	public static int totalCost() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+}

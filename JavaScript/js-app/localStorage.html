@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>localStorage</title>
+    <h1>All about localStorage</h1>
+</head>
+<body>
+    <a href="index.html">Go back to index</a>
+    <script>
+
+        // var student = {id : 101, name : "Faisal"};
+        // console.log(student);
+        // console.log(student['id']);
+        // console.log(student['name']);
+
+        // console.log(typeof student);
+
+        // localStorage['monocept.student'] = student.toString();
+        // console.log(localStorage['monocept.student']);
+        
+        // localStorage['monocept.student'] = JSON.stringify(student);
+        // console.log(localStorage['monocept.student']);
+
+        // var student = JSON.parse(localStorage['monocept.student']);
+        // console.log(student);
+
+        var students = [{id:101, name:"Rohit", cgpa:6, location:"Delhi"},
+                        {id:102, name:"Rahul", cgpa:7, location:"Mumbai"},
+                        {id:103, name:"VikramAditya", cgpa:8, location:"Hyderabad"},
+                        {id:104, name:"Mohit", cgpa:9, location:"Banglore"}];
+        
+        // localStorage['monocept.students'] = students.toString();
+        // console.log(localStorage['monocept.students']);
+
+        localStorage['monocept.students'] = JSON.stringify(students);
+        console.log(localStorage['monocept.students']);
+
+        var students = JSON.parse(localStorage['monocept.students']);
+        console.log(students);
+        console.log(typeof students);
+
+        var studentsByLocation = students.filter(function(students){
+            return students.location == "Hyderabad";
+        });
+        // var nameL = studentsByLocation.name;
+        // console.log(nameL);
+        console.log(studentsByLocation);
+
+        var studentsByCgpa = students.filter(function(students){
+            return students.cgpa >= 8;
+        });
+        console.log(studentsByCgpa);
+
+        // var res = students.filter(check);
+        // console.log(students.filter(check));
+        // console.log(res);
+        
+        // function check(res)
+        // {
+        //     return location == "Hyderabad";
+        // }
+
+    </script>
+</body>
+</html>

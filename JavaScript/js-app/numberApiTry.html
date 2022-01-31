@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NumberApi</title>
+</head>
+<body>
+    <a href="index.html">Go back to Index</a>
+    <form>
+        <table cellspacing="2" align ="center" cellpadding="8">
+            <tr>
+                <td>Enter a number :</td>
+                <td><input id="number" type="text" placeholder="Enter number here"/></td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="subBtn"type="submit">Show</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <p id="show"></p>
+
+    <script>
+        "use strict"
+    //     const xhr = new XMLHttpRequest();
+    // // console.log(xhr.readyState);
+    //     xhr.onreadystatechange = function(){
+    //         // console.log(xhr.readyState);
+    //         if(xhr.readyState == 4)
+    //         {
+    //             if(xhr.status == 200)
+    //             {
+    //                 var form = document.querySelector("form");
+    //                 var fact = document.getElementById("show");
+    //                 var inputBox = document.getElementById("number");
+    //                 var submitButton = document.getElementById("subBtn");
+    //                 var factUrl = "http://numbersapi.com/";
+    //                 var num = e.target.querySelector('input[type="text"]').value;
+    //                 fetch(factUrl + num, {})
+    //             }
+    //             if(xhr.status == 404)
+    //             {
+    //                 console.log("Not found");
+    //             }
+    //         }
+    //     };
+    //     xhr.open('get','http://numbersapi.com',true);
+    //     xhr.send();
+
+    //     addBtn.onclick = () => {
+    //         let data = inputBox.value;
+    //         let getLocalStorage = localStorage.getItem("New Facts");
+    //         if(getLocalStorage == null) {
+    //             listArr = [];
+    //         }
+    //         else {
+    //             listArr = JSON.parse(getLocalStorage);
+    //         }
+    //         listArr.push()
+    //     }
+
+
+
+
+        var form = document.querySelector("form");
+        var fact = document.getElementById("show");
+        var showFacts
+
+        form.addEventListener("submit",(e) => {
+            e.preventDefault();
+            // show();
+            var factUrl = "http://numbersapi.com/";
+            var num = e.target.querySelector('input[type="text"]').value;
+            var getLocalStorage;
+            var listArr = [];
+            // var getLocalStorage = localStorage.getItem("New Facts");
+            // if(getLocalStorage == null) {
+            //     listArr = [];
+            // }
+            // else {
+            //     listArr = JSON.parse(getLocalStorage);
+            // }
+            fetch(factUrl + num, {})
+            .then(response => response.text())
+            // .then(getLocalStorage = localStorage.getItem("New Facts"))
+            // .then(listArr = JSON.parse(getLocalStorage))
+            // if(getLocalStorage == null) {
+            //     listArr = [];
+            // }
+            // else {
+            //     listArr = JSON.parse(getLocalStorage);
+            // }
+            // listArr.push(text)
+            // .then(listArr.push(text))
+            // .then(localStorage.setItem("New Facts", JSON.stringify(listArr)))
+            // .then(document.getElementById("show").innerHTML = showFacts)
+            .then(text => localStorage['facts'] = JSON.stringify(text))
+            .then(showFacts = JSON.parse(localStorage['facts']))
+            .then(document.getElementById("show").innerHTML = showFacts + "(" + moment().startOf('hour').fromNow() + ")")
+            // color()
+            .then(text => fact.innerHTML = text + "(" + moment().startOf('hour').fromNow() + ")")
+
+            
+        })
+
+        // function color()
+        // {
+        //     showFacts.style.color = "red";
+        // }
+
+        
+
+        // function show() {
+        //     document.write(showFacts);
+        // }
+        // document.write(showFacts);
+
+        // document.getElementById("show").innerHTML = text;
+        // localStorage['facts'] = JSON.stringify()
+        // var factsStorage = 
+
+    </script>
+    <script src="moment.js"></script>
+</body>
+</html>

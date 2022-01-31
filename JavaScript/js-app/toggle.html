@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>Toggle</title>
+        <style>
+            .button{
+                text-align: center;
+                cursor:pointer;
+                font-size: 40px;
+                border-radius: 15px;
+                border: 3px Solid royalblue;
+                color: white; 
+                width: 300;
+                height: 100;
+                text-decoration: none;
+                background-color: royalblue;
+            }
+            .button {
+                transition-duration: 300ms;
+            }
+            .button:hover{
+                background-color: white;
+                color: royalblue;
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <a href="index.html">Go back to Index</a>
+        <img id = "image" src="loader.gif">
+        <button id = "btn" class = "button">On</button>
+        <script>
+            
+            "use strict";
+            var image = document.getElementById(image);
+            var button = document.getElementById("btn");
+            button.addEventListener("click", buttonToggle);
+            var toggle = true;
+            function buttonToggle()
+            {
+                if(!toggle)
+                {
+                    // delay();
+                    toggle = true;
+                    document.getElementById('image').style.display = '';
+                    button.style.backgroundColor = "red";
+                    button.innerText = "On";
+                }
+                else
+                {
+                    // delay();
+                    toggle = false;
+                    document.getElementById('image').style.display = 'none';
+                    button.style.backgroundColor = "green"
+                    button.innerText = "Off";
+                }
+            }
+
+            function delay()
+            {
+                for (var i = 0; i < 80000000; i++)
+                {
+                    var foo = Math.random() * 10000;
+                }
+            }
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+version: '1'
+service:
+ post_svc:
+  build: ./blogPost
+  ports:
+   - "5000:5000"
+
+  comment_svc:
+  build: ./blogComment
+  ports:
+   - "5001:5001"
+
+  event-bus_svc:
+  build: ./event-bus
+  ports:
+   - "5005:5005"
+
+  query_svc:
+  build: ./blogQuery
+  ports:
+   - "5002:5002"
+
+  ui_svc:
+  build: ./ui
+  ports:
+   - "3000:3000"

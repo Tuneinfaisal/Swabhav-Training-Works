@@ -1,0 +1,14 @@
+package com.monocept.test;
+
+import com.monocept.StatusBar;
+import com.monocept.StockListView;
+
+public class Test {
+	
+	public static void main(String[] args)
+	{
+		StatusBar sb = new StatusBar();
+		StockListView sv = new StockListView();
+	}
+
+}

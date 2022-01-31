@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ModlePattern2</title>
+</head>
+<body>
+    <a href="index.html">Go back to index</a>
+    <script>
+
+        var DataService = function()
+        {
+            var obj = {};
+            console.log("inside dataService");
+
+            obj.doTask1 = function()
+            {
+                console.log("inside task1");
+            }
+
+            obj.doTask2 = function()
+            {
+                console.log("inside task2");
+            }
+
+            obj.getData = function()
+            {
+                return Math.random()*10;
+            }
+            return obj;
+        }();
+
+        DataService.doTask1();
+        DataService.doTask2();
+        console.log(DataService.getData());
+
+    </script>
+    
+</body>
+</html>

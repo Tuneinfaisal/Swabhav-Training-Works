@@ -1,0 +1,17 @@
+package com.decorator2;
+
+public class OilChange extends CarDecorator{
+	
+	private ICarService service;
+	
+	public OilChange(ICarService service)
+	{
+		this.service = service;
+	}
+	
+	public int getCost()
+	{
+		return 500 + service.totalCost();
+	}
+
+}

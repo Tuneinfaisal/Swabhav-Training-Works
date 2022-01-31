@@ -1,0 +1,12 @@
+package com.decorator;
+
+public class GoldenHat extends HatDecorator{
+
+	public GoldenHat(Hat hat)
+	{
+		super(hat);
+	}
+
+	
+
+}

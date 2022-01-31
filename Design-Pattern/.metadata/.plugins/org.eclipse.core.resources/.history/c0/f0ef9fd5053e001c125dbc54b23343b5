@@ -1,0 +1,23 @@
+package com.decorator2.test;
+
+import com.decorator2.CarInspection;
+import com.decorator2.ICarService;
+import com.decorator2.OilChange;
+import com.decorator2.TyreChange;
+
+public class Test {
+	
+	public static void main(String[] args)
+	{
+		ICarService ics = new OilChange(new TyreChange(new CarInspection()));
+		
+		System.out.println("Total cost is : " + ics.totalCost());
+		
+//		OilChange oc = new OilChange(new CarInspection());
+//		System.out.println(oc.getCost());
+//		
+//		TyreChange tc = new TyreChange(new CarInspection());
+//		System.out.println(tc.getCost());
+	}
+
+}

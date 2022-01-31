@@ -1,0 +1,17 @@
+package com.decorator2;
+
+public class TyreChange extends CarDecorator{
+	
+	private static ICarService service;
+	
+	public TyreChange(ICarService service)
+	{
+		super(service);
+	}
+	
+	public int getCost()
+	{
+		return 1000 + service.totalCost();
+	}
+
+}

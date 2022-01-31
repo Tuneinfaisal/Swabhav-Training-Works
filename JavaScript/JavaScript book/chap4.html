@@ -1,0 +1,84 @@
+<html>
+    
+    <head>
+        <title>JavaScript chapter 4</title>
+        <h1>All about conditional statements</h1>
+    </head>
+
+    <body>
+        <script>
+
+            var safeToProceed = false;
+            if(safeToProceed)
+            {
+                alert("Yes");
+            }
+            else
+            {
+                alert("No");
+            }
+
+            var speedLimit = 40;
+            amISpeeding(30);
+            function amISpeeding(speed)
+            {
+                if(speed >= speedLimit)
+                {
+                    alert("You are crossing the speed limit")
+                }
+                else
+                {
+                    alert("No, you are not crossing the speed limit")
+                }
+            }
+
+            var xPos = 500;
+            var yPos = 200;
+            sendWarning(400,193);
+            sendWarning(500,250);
+            function sendWarning(x,y)
+            {
+                if((x < xPos) && (y < yPos))
+                {
+                    alert("Adjust the position");
+                }
+                else
+                {
+                    alert("Position is fine");
+                }
+            }
+
+            var position = 100;
+            if(position < 100)
+            {
+                alert("Do something");
+            }
+            else if((position >= 100) && (position < 200))
+            {
+                alert("Do something else");
+            }
+            else
+            {
+                alert("Do something different");
+            }
+
+            //Switch statements
+            var colour = "blue";
+            switch(colour)
+            {
+                case "green":
+                    alert("Green colour");
+                    break;
+                case "blue":
+                    alert("Blue colour");
+                    break;
+                case "red":
+                    alert("Red colour");
+                    break;
+                default:
+                    alert("No colour specified");
+            }
+
+        </script>
+    </body>
+</html>

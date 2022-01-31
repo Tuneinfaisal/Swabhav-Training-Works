@@ -1,0 +1,14 @@
+package com.monocept;
+
+public class Stock {
+	
+	private String name;
+	private int num;
+	ArrayList<IView> view = new ArrayList<IView>();
+	
+	public Stock()
+	{
+		
+	}
+
+}

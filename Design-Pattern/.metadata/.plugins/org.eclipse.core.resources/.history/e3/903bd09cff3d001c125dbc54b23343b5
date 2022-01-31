@@ -1,0 +1,12 @@
+package com.decorator2;
+
+public class TyreChange extends CarDecorator{
+	
+	private ICarService service;
+	
+	public TyreChange(ICarService service)
+	{
+		this.service = service;
+	}
+
+}

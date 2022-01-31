@@ -1,0 +1,37 @@
+package com.monocept;
+
+import java.util.ArrayList;
+
+public class Stock {
+	
+	private String name;
+	private int price;
+//	ArrayList<IView> view = new ArrayList<IView>();
+	
+	public Stock(String name, int price)
+	{
+		this.name = name;
+		this.price = price;
+	}
+	
+	public void setPrice(int num)
+	{
+		this.price = num;
+	}
+	
+	public String getName()
+	{
+		return name;
+	}
+	
+	public int getPrice()
+	{
+		return price;
+	}
+	
+//	public void addStock(IView v)
+//	{
+//		view.add(v);
+//	}
+
+}

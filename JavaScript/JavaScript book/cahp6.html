@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>JavaScript chapter 6</title>
+        <h1>All about Timer</h1>
+    </head>
+    <body>
+        <p>Goli maar -</p>
+        <script>
+
+            //setTimeout
+            var timeID = setTimeout(showAlert, 1000);
+            function showAlert()
+            {
+                alert("Hello");
+            }
+            // clearTimeout(timeID);
+
+            //setInterval
+            var intervalID = setInterval(drawText, 2000);
+            function drawText()
+            {
+                document.querySelector("p").textContent += ">";
+            }
+            // clearInterval(intervalID);
+
+            //requestAnimationFrame
+            var requestID = requestAnimationFrame(animationLoop);
+            function animationLoop()
+            {
+                // animation-related code
+                requestAnimationFrame(animationLoop);
+            }
+            // start off our animation loop!
+            animationLoop();
+            // cancelAnimationFrame(requestID);
+
+        </script>
+    </body>
+</html>

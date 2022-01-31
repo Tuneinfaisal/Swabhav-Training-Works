@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html">Go back to index</a>
+    <script>
+
+        // "use strict"
+        var DataService = function(){
+            var service = {};
+            service.getData = function(no) {
+                return new Promise(function(resolve,reject){
+                    var value = Math.random()*no;
+                    conslole.log('inside promice ' + value);
+                    if(value > no/2)
+                    {
+                        resolve({message:'success',data:value});
+                    }
+                    reject({message:'error happend value is small ' + value});
+                })
+            }
+            return service;
+        }()
+
+        DataService.getData(10)
+            .then(function(result){
+                console.log("inside then method");
+                console.log(result);
+                return result.data;
+            })
+            .then(function(data){
+                console.log("inside second then method " + data);
+            })
+            .catch(function(error){
+                console.log("inside catch method");
+            })
+
+        console.log("end of program");
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+package com.decorator;
+
+public class RibbonHat implements Hat {
+	
+	public RibbonHat(GoldenHat goldenHat)
+	{
+		
+	}
+
+	public static void main(String[] args)
+	{
+		Hat h = new RibbonHat(new GoldenHat(new StandardHat()));
+	}
+
+	@Override
+	public String getName() {
+		// TODO Auto-generated method stub
+		return "Ribbon hat";
+	}
+
+	@Override
+	public String getPrice() {
+		// TODO Auto-generated method stub
+		return "200";
+	}
+
+	@Override
+	public String getDescription() {
+		// TODO Auto-generated method stub
+		return "Best ribbon hat";
+	}
+
+}

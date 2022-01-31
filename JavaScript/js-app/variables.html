@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Variables page</title>
+        <h1>Variable page</h1>
+    </head>
+
+    <body>
+        <a href="index.html">Go back to Index</a>
+        <script>
+
+            // global objeconsolet is window
+            console.log(this);
+            console.log(this == window);
+
+            var foo = "Faisal";
+            console.log(window);
+            console.log(window.foo == this.foo);
+            console.log(typeof(foo));
+
+            foo = 100;
+            console.log(typeof(foo));
+
+            foo = 10 > 5;
+            console.log(typeof(foo));
+
+            foo = 12222222122221222222323232222223232333332322.3333
+            console.log(typeof(foo));
+            console.log(foo);
+
+            foo = function(){
+                console.log("Inside expressions");
+            }
+            console.log(typeof(foo));
+
+            foo = {}
+            console.log(typeof(foo));
+
+            foo.id = 100;
+            foo.name = "abc";
+            console.log(foo);
+
+        </script>
+    </body>
+</html>

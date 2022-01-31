@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html">Go back to Index</a>
+    <button id = "delayBtn" class = "delayBtn">Delay</button>
+    <button id = "helloBtn" class = "helloBtn">Hello</button>
+    <button id = "goodbyeBtn" class = "goodbyeBtn">Goodbye</button>
+    <script>
+
+        var delayBtn = document.getElementById("delayBtn");
+        delayBtn.addEventListener("click",delayHandler);
+        function delayHandler()
+        {
+            delay(5);
+            console.log("After the delay");
+        }
+        function delay(seconds)
+        {
+            var startTime = Date.now();
+            while(Date.now() - startTime < seconds * 1000);
+        }
+
+        var helloBtn = document.getElementById("helloBtn");
+        helloBtn.addEventListener("click",helloHandler);
+        function helloHandler()
+        {
+            console.log("Hello");
+        }
+
+        var goodbyeBtn = document.getElementById("goodbyeBtn");
+        goodbyeBtn.addEventListener("click",goodbyeHandler);
+        function goodbyeHandler()
+        {
+            console.log("Goodbye");
+        }
+
+    </script>
+</body>
+</html>

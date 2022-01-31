@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>JavaScript chapter 7</title>
+        <h1>All about variable scope</h1>
+    </head>
+
+    <body>
+        <script>
+
+            var counter = 0;
+            function returnCounter()
+            {
+                return counter;
+            }
+            var result = returnCounter;
+            alert(window.counter == counter);
+
+            function setState()
+            {
+                var state = "on";
+            }
+            setState();
+            alert(state);
+
+            checkWeight(500);
+            function checkWeight(weight)
+            {
+                if(weight => 500)
+                {
+                    var msg = "No free delevery for you";
+                    alert(msg);
+                }
+                alert(msg);
+            }
+
+            var x = 100;
+            blockScoping();
+            function blockScoping()
+            {
+                if(true)
+                {
+                    let x = 200;
+                    alert(x);
+                }
+                alert(x);
+            }
+
+            var foo = "Hello!";
+            doSomething();
+            function doSomething()
+            {
+                alert(foo);
+                var foo = "Good bye!";
+                alert(foo);
+            }
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html">Go back to index</a>
+
+    <script>
+
+        "use strict"
+        var DataService = function() {
+            var service = {};
+            function buildUrl(no) {
+                return "http://nubmersapi.com/" + no + "?json";
+            }
+
+            service.getDataViaCallBackXhr = function(no,fnResponse) {
+                console.log("inside getDataViaCallBackXhr");
+            }
+
+            var xhr = new XMLHttpRequest();
+            xhr.onload = function() {
+                fnResponse(this.responseText);
+            }
+            xhr.open("get",buildUrl(no));
+            xhr.send();
+
+            service.getDataViaPromiceXhr = function(no) {
+                return new Promise((resolve,reject) =>{
+                    console.log("inside getDataViaPromiceXhr");
+                    var xhr = new XMLHttpRequest();
+                    xhr.onload = function() {
+                        resolve(this.responseText);
+                    }
+                    xhr.onerror = function() {
+                        reject(this.response);
+                    }
+                    xhr.open("get",buildUrl(no));
+                    xhr.send();
+                })
+            }
+
+            service.getDataViaPromiceFetch = function(no) {
+                var promice1 = fetch(buildUrl(no));
+                var promice2 = promice1.then(function(resp) {
+                    return resp.json();
+                })
+                console.log("inside getDataViaPromiceFetch");
+                return promice2;
+            }
+
+            return service;
+        }()
+
+        DataService.getDataViaCallBackXhr(5,function(resp){
+            console.log(resp);
+        });
+
+        DataService.getDataViaPromiceXhr(10)
+            .then(function(resp) {
+                console.log(resp);
+            })
+            .catch(function(err) {
+                console.log(err);
+            })
+
+        DataService.getDataViaPromiceFetch(20)
+            .then(function(resp) {
+                console.log(resp);
+            })
+            .catch(function(err) {
+                console.log(err);
+            })
+
+        console.log("end of program");
+
+    </script>
+
+</body>
+</html>

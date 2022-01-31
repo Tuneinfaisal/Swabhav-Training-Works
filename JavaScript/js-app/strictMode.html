@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Strict</title>
+        <h1>All about strict mode</h1>
+    </head>
+
+    <Body>
+        <a href="index.html">Go back to index</a>
+        <script>
+
+            "use strict";
+            // var a = 10;
+            // console.log(10);
+
+            // function test(a,b,c)
+            // {
+            //     // var b = 20;
+            //     console.log(a+b+c);
+            // }
+            // test(1,2,3);
+
+            var counter = undefined;
+
+            f1();
+            function f1()
+            {
+                for(var counter=1;counter<=10;counter++)
+                {
+                    console.log("inside loop " + counter);
+                }
+                console.log("outside loop " + counter);
+            }
+
+            // f2();
+            var f2 = function()
+            {
+                console.log("inside f2");
+            }
+
+            f2();
+            console.log("counter value outside " + counter);
+
+        </script>
+    </Body>
+</html>

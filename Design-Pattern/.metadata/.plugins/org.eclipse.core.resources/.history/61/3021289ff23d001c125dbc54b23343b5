@@ -1,0 +1,7 @@
+package com.decorator;
+
+public class HatDecorator {
+
+	Hat h = new Hat();
+
+}

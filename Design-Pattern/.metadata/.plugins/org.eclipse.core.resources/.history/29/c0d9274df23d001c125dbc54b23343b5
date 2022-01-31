@@ -1,0 +1,9 @@
+package com.decorator;
+
+public abstract class Hat {
+	
+	public String getName();
+	public String getPrice();
+	public String getDescription();
+
+}

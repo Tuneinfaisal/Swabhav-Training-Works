@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>wrapper</title>
+    </head>
+
+    <body>
+        <a href="index.html">Go back to index</a>
+        <script>
+
+            "use strict"
+            function add(x,y)
+            {
+                console.log(x+y);
+            }
+
+            // wrapping
+            // var logger = function(add)
+            function logger(add)
+            {
+                return function(x,y)
+                {
+                    console.log("The arguments are " + x + " " + y);
+                    add(x,y);
+                }
+            }
+
+            add = logger(add);
+            add(5,6);
+            // console.log(add(5,6));
+
+        </script>
+    </body>
+</html>

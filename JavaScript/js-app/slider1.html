@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+</head>
+<body>
+    <a href="index.html">Go back to index</a>
+    <h1>Slider</h1>
+    <div class = "sliderGame">
+        <input type = "range" min = "1" max = "51" value = "20" class = "slider" id = "slider">
+        <p>Current value : <span id = "outputValue"></span></p>
+        <div class = "buttonSlider"></div>
+    </div>
+    <script>
+
+        var slider = document.getElementById("slider");
+        var output = document.getElementById("outputValue");
+        // output.innerHTML = this.value;
+        // output = 20;
+
+        // document.querySelector(".buttonSlider") = 20;
+
+        const sliderGame = document.querySelector(".buttonSlider");
+        output.innerHTML = sliderGame.value;
+
+        slider.oninput = function(){
+            output.innerHTML = this.value;
+            sliderGame.innerHTML = " ";
+            // slide numbers
+            for(var i=1;i<slider.value;i++)
+            {
+                var button = document.createElement("button");
+                button.setAttribute("class","btn");
+                button.textContent = i;
+                sliderGame.appendChild(button);
+                button.addEventListener("click", alertButton);
+            }
+        };
+
+        var alertButton = function(e){
+            alert("You clicked " + e.target.textContent);
+        }
+        // console.log(alertButton);
+
+    </script>
+</body>
+</html>

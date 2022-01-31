@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.monocept.service.DataService"/>
+    <fullyQualifiedTypeName name="com.model.IStorageItem"/>
+    <fullyQualifiedTypeName name="com.model.GroupTag"/>
+    <fullyQualifiedTypeName name="com.sun.org.apache.bcel.internal.generic.LLOAD"/>
+    <fullyQualifiedTypeName name="com.sun.tools.javac.jvm.Items"/>
+    <fullyQualifiedTypeName name="com.monocept.item.ShoppingCart"/>
+    <fullyQualifiedTypeName name="com.monocept.item.HatAdapter"/>
+    <fullyQualifiedTypeName name="hat.model.Hat"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="com.decorator.Hat"/>
+    <fullyQualifiedTypeName name="com.decorator.RibbonHat"/>
+    <fullyQualifiedTypeName name="com.decorator.GoldenHat"/>
+    <fullyQualifiedTypeName name="com.decorator.StandardHat"/>
+    <fullyQualifiedTypeName name="com.decorator.PremiumHat"/>
+    <fullyQualifiedTypeName name="com.decorator2.CarDecorator"/>
+    <fullyQualifiedTypeName name="com.decorator2.ICarService"/>
+    <fullyQualifiedTypeName name="com.decorator2.CarInspection"/>
+    <fullyQualifiedTypeName name="com.decorator2.OilChange"/>
+    <fullyQualifiedTypeName name="com.decorator2.TyreChange"/>
+    <fullyQualifiedTypeName name="java.lang.Package"/>
+    <fullyQualifiedTypeName name="com.proxy.RealImage"/>
+    <fullyQualifiedTypeName name="com.proxy.Image"/>
+    <fullyQualifiedTypeName name="com.proxy.ProxyImage"/>
+    <fullyQualifiedTypeName name="com.monocept.StockListView"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.monocept.IView"/>
+    <fullyQualifiedTypeName name="com.monocept.Stock"/>
+    <fullyQualifiedTypeName name="com.monocept.StatusBar"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,17 @@
+package com.decorator2;
+
+public class CarInspection implements ICarService{
+
+	@Override
+	public int totalCost()
+	{
+		return 500;
+	}
+
+	@Override
+	public String getDetails() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

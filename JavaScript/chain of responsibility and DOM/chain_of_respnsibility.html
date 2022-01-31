@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div onclick="divHandler()">
+
+        <section onclick="sectionHandler()">
+
+            <p onclick="paraHandler()">
+
+                <button id="btn" onclick="btnHandler()">Hello</button>
+
+            </p>
+
+        </section>
+
+    </div>
+
+    <script>
+
+        
+        function btnHandler() {
+            m1 = "button";
+        }
+
+        function paraHandler() {
+            console.log(m1);
+            m2 = "para";
+            // printDefault();
+        }
+
+        function sectionHandler() {
+            console.log(m1,m2);
+            m3 = "section";
+        }
+
+        function divHandler() {
+            console.log(m1,m2,m3);
+            m4 = "div";
+        }
+
+        function printDefault() {
+            console.log("no");
+        }
+
+    </script>
+
+</body>
+</html>

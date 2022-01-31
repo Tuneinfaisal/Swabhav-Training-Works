@@ -1,0 +1,8 @@
+package com.decorator;
+
+public class RibbonHat {
+	
+	Hat h = new RibbonHat(new GoldenHat(new StandardHat()));
+	
+
+}

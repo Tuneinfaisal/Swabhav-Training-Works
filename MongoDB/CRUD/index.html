@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        body {
+          font-family: sans-serif;
+        }
+  
+        .container {
+          border-radius: 10px;
+          width: 50%;
+          margin: 100px auto;
+          border: 1px solid grey;
+          padding: 10px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 24px;
+          background-color: #1bbdb5;
+          box-shadow: 0 0 22px rgba(0, 0, 0, 0.25);
+        }
+        
+        .btn {
+            color: blue;
+            size: 500px;
+            padding: 10px;
+            width: 80px;
+        }
+
+        .hidden {
+          display: none;
+        }
+      </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <label for="id">Id</label>
+            <input type="number" id="id" name="id" />
+        </div>
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" />
+        </div>
+        <div>
+            <label for="cgpa">Cgpa</label>
+            <input type="number" id="cpga" name="cpga" />
+        </div>
+
+        <button id="addBtn" class="btn" onclick="addStudent()">Post</button>
+    </div>
+
+    <div class="container">
+        <button id="getBtn" class="btn" name="id" onclick="getStudent()">Get</button>
+    </div>
+    
+    <div class="hidden" id="student-data">
+        <table>
+            <thead>
+                <tr>
+                    <th>Id </th>
+                    <th>Name</th>
+                    <th>Cgpa</th>
+                </tr>
+            <tbody id="tbody">
+
+            </tbody>
+            </thead>
+        </table>
+    </div>
+
+    <script src="students.js"></script>
+</body>
+
+</html>

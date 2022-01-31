@@ -1,0 +1,19 @@
+package com.decorator2;
+
+public class CarDecorator implements ICarService{
+	
+	private ICarService cs;
+	
+	public CarDecorator(ICarService cs)
+	{
+		super();
+		this.cs = cs;
+	}
+
+	@Override
+	public int totalCost()
+	{
+		return this.cs.totalCost();
+	}
+
+}

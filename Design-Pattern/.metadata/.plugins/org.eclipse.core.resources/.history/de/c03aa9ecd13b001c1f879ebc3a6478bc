@@ -1,0 +1,32 @@
+package com.model;
+
+import java.util.ArrayList;
+
+public class File implements IStorageItem{
+	
+	private String name;
+	private String type;
+	private ArrayList<IStorageItem> children = new ArrayList<IStorageItem>();
+	
+	public File(String name, String type)
+	{
+		this.name = name;
+		this.type = type;
+	}
+	
+	public void addChildren(IStorageItem im)
+	{
+		children.add(im);
+	}
+
+	@Override
+	public void display()
+	{
+		for(IStorageItem i : children)
+		{
+			i.display();
+//			System.out.print(i.display());
+		}
+	}
+
+}

@@ -1,0 +1,15 @@
+package com.decorator.test;
+
+import com.decorator.GoldenHat;
+import com.decorator.Hat;
+import com.decorator.RibbonHat;
+import com.decorator.StandardHat;
+
+public class Test {
+	
+	public static void main(String[] args)
+	{
+		Hat h = new RibbonHat(new GoldenHat(new StandardHat()));
+	}
+
+}

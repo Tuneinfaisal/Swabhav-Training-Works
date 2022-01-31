@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>JavaScript chapter 8</title>
+        <h1>All about closure</h1>
+    </head>
+
+    <body>
+        <script>
+
+            var roomArea = calculateRectangleArea(10,10);
+            alert(roomArea);
+            function calculateRectangleArea(length,width)
+            {
+                return length * width;
+            }
+
+            var something = youSayGoodBye();
+            something();
+            function youSayGoodBye()
+            {
+                alert("Good bye!");
+                function iSayHello()
+                {
+                    alert("Hello!");
+                }
+                return iSayHello;
+            }
+
+            var timer = stopWatch();
+            for (var i = 0; i < 1000000; i++)
+            {
+                var foo = Math.random() * 10000;
+            }
+            timer();
+            function stopWatch()
+            {
+                var startTime = Date.now();
+                function getDelay()
+                {
+                    var elapsedTime = Date.now() - startTime;
+                    alert(elapsedTime);
+                }
+                return getDelay;
+            }
+
+        </script>
+    </body>
+</html>

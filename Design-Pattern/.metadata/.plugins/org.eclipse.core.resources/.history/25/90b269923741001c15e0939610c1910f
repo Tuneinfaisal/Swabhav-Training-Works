@@ -1,0 +1,11 @@
+package com.monocept;
+
+public class StatusBar implements IView{
+
+	@Override
+	public void addStock(IView v) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

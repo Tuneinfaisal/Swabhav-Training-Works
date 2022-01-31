@@ -1,0 +1,84 @@
+<html>
+
+<head>
+    <title>JavaScript chapter 5</title>
+    <h1>All about loops</h1>
+</head>
+
+<body>
+    <script>
+
+        // for loop
+        var count1 = 10;
+        for (var i = 0; i < count1; i++)
+        {
+            saySomething();
+        }
+        function saySomething()
+        {
+            document.writeln("Hello!");
+            document.writeln("<br>");
+        }
+
+        for(var i=0;i<10;i++)
+        {
+            document.writeln(i);
+            if(i == 4)
+            {
+                break;
+            }
+        }
+
+        for (var i = 0; i < 10; i++)
+        {
+            if (i == 4)
+            {
+                continue;
+            }
+            document.writeln(i);
+            document.writeln("<br>");
+        }
+
+        var floors = 28;
+        for (i=1;i<=floors;i++)
+        {
+            if (i == 13)
+            {
+                continue;
+            }
+            document.writeln("At floor: " + i + "<br>");
+        }
+
+        for(var i="a";i!="aaaaa";i+="a")
+        {
+            document.writeln("hmmm");
+        }
+
+        var myArray = ["Red","Yellow","Green","Blue"];
+        for(i=0;i<myArray.length;i++)
+        {
+            document.writeln(myArray[i]);
+        }
+
+        //while loop
+        var count1 = 0;
+        while(count1 <= 10)
+        {
+            document.writeln(count1);
+            count1++;
+        }
+        document.writeln("<br>");
+
+        //do while loop
+        var count2 = 0;
+        do
+        {
+            document.writeln(count2);
+            count2++;
+        }
+        while(count2 <= 10)
+        
+    </script>
+</body>
+
+</html>

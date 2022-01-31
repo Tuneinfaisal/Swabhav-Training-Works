@@ -1,0 +1,16 @@
+package com.monocept;
+
+import java.util.ArrayList;
+
+public class Stock {
+	
+	private String name;
+	private int num;
+	ArrayList<IView> view = new ArrayList<IView>();
+	
+	public Stock()
+	{
+		
+	}
+
+}

@@ -1,0 +1,13 @@
+package com.proxy;
+
+public class ProxyImage {
+	
+	private String fileName;
+	private RealImage realImage;
+	
+	public ProxyImage(String fileName)
+	{
+		this.fileName = fileName;
+	}
+
+}

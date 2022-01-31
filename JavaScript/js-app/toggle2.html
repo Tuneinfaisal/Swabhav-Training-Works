@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>toggle2</title>
+    <style>
+        .button1 {
+            text-align: center;
+            cursor:pointer;
+            font-size: 300px;
+            border-radius: 10px;
+            border: 3px Solid royalblue;
+            color: white; 
+            text-decoration: none;
+            background-color: royalblue;
+        }
+        .button1{
+            transition-duration: 300ms;
+        }
+        .button1:hover{
+            background-color: white;
+            color: royalblue;
+        }
+
+        .button2{
+            text-align: center;
+            cursor:pointer;
+            font-size: 300px;
+            border-radius: 10px;
+            border: 3px Solid royalblue;
+            color: white; 
+            text-decoration: none;
+            background-color: royalblue;
+        }
+        .button2{
+            transition-duration: 300ms;
+        }
+        .button2:hover{
+            background-color: white;
+            color: royalblue;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="index.html">Go back to Index</a>
+    <button id = "button1" class = "button1">one</button>
+    <button id = "button2" class = "button2">two</button>
+    <script>
+
+        (function(){
+            "use strict"
+            document.getElementById("button1").addEventListener("click",function()
+            {
+                var btn1 = document.getElementById("button1");
+                if(btn1.style.display == "none")
+                {
+                    btn1.style.display = "";
+                }
+                else
+                {
+                    btn1.style.display = "none";
+                }
+            })
+        })
+        document.getElementById("button1").addEventListener("click",function()
+        {
+            var btn2 = document.getElementById("button2");
+            if(btn2.style.display == "none")
+            {
+                btn2.style.display = "";
+            }
+            else
+            {
+                btn2.style.display = "none";
+            }
+        })
+
+    </script>
+</body>
+</html>

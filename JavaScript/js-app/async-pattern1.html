@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>async-pattern1</title>
+</head>
+<body>
+    <a href="index.html">Go back to index</a>
+    <script>
+
+        "use strict"
+        var DataService = function() {
+            var service = {};
+            service.getData = function (val) {
+                var r = Math.random()*val;
+                if(r >= (.5*val)) {
+                    return {status:"success",data:r};
+                }
+                return {status:"Error", msg:"Data generated is small" + r};
+            }
+            return service;
+        }()
+
+        var result = DataService.getData(100);
+        console.log(result);
+        console.log("end of program");
+
+    </script>
+</body>
+</html>
