@@ -1,0 +1,11 @@
+<div id="discountContainer">
+    <label for="amount">Amount</label> &nbsp;
+    <input type="number" id="amountText" placeholder="enter amount">
+    <br>
+    <label for="rate">Rate</label> &nbsp;
+    <input type="number" id="rateText" placeholder="enter rate">
+    <br>
+    <button id="discountButton" (click)="getDiscount()">Calculate discount</button>
+    <br>
+    <h3>Discount is : {{discountAmount}}</h3>
+</div>

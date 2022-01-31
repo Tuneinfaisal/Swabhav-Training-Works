@@ -1,0 +1,27 @@
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  padding: 10px;
+  background: linear-gradient(to bottom, #68eacc 0%, #497be8 100%);
+}
+
+.btn {
+  min-width: 30%;
+  height: 30%;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 20px;
+  border: 2px solid #2c0b8e;
+  background: #2c0b8e;
+}
+.btn:hover {
+  background: #fff;
+  color: #2c0b8e;
+}

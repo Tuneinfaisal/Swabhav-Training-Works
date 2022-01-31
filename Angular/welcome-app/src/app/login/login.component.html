@@ -1,0 +1,38 @@
+<div class="container">
+    <form [formGroup]="formLogin">
+
+        <div class="mb-3">
+            <label for="userName"
+            class="form-label">Username</label>
+            <input type="text" class="form-control"
+            formControlName="userName"
+            id="userName" aria-describedby="userName">
+
+            <div *ngIf="formLogin.get('userName')?.invalid && 
+            formLogin.get('userName')?.touched"
+            class="alert alert-danger">Minimun 5 length is required</div>
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleInputPassword1"
+            class="form-label">Password</label>
+            <input type="password" class="form-control"
+            formControlName="userPassword"
+            id="exampleInputPassword1">
+
+            <div *ngIf="formLogin.get('userPassword')?.invalid && 
+            formLogin.get('userPassword')?.touched"
+            class="alert alert-danger">Password is required</div>
+        </div>
+
+        <button type="submit"
+        [disabled]="formLogin.invalid"
+        class="btn btn-primary">Submit</button>
+
+        <h1>Form group is valid : {{formLogin.valid}}</h1>
+        <h1>Control1 valid : {{formLogin.get('userName')?.valid}}</h1>
+        <h1>Control1 pristine : {{formLogin.get('userName')?.pristine}}</h1>
+        <h1>Control2 valid : {{formLogin.get('userPassword')?.valid}}</h1>
+        <h1>Control2 pristine : {{formLogin.get('userPassword')?.pristine}}</h1>
+    </form>
+</div>

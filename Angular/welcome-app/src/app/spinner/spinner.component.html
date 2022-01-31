@@ -1,0 +1,9 @@
+<!-- <p [innerText]="'Diaplaying an image !'"></p> -->
+
+<div>
+    <label>Show image</label>
+    <input type="checkbox" [value]="btnText" (click)="handleToggle($event)">
+</div>
+<div>
+    <img [hidden]="hideImage" [src]="imageUrl" />
+</div>

@@ -1,0 +1,19 @@
+<body style="padding: 20%;">
+<div class="container" >
+    <label style="font-family: sans-serif; font-size: 100%; color: rgb(47, 10, 151);"  for=""> Enter Number to get fact</label>
+    <br>
+    <input type="number" name =" " id=" " #number />
+    <br>
+    <button  style="align-self: center;" class="btn" (click)="clickHandler(number.value)">Get Facts</button>
+</div>
+<br>
+<br>
+
+<div class="container-box" [hidden]='hidden1' style="color: rgb(253, 253, 253); font-family: cursive;">
+    <ul class="list-facts" *ngFor="let items of textItems.reverse()">
+        <li class="list-fact-items list-fact-items-primary list-item">
+            {{items.text}} searched at {{items.date}}
+        </li>
+    </ul> 
+</div>
+</body>

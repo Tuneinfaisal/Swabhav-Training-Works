@@ -1,0 +1,43 @@
+<body>
+    <div class="container">
+
+        <div class="rules" [hidden]="hideElement">
+            <h1>Welcome to Blue ball game</h1>
+            <h2>Rules </h2>
+
+            <!-- <ul>
+                <li>You can select balls from 10-100</li>
+                <br>
+                <li>You have 1min. to guess the right ball.......!!!</li>
+                <br>
+                <li>Ball becomes red if you guess the ball greater than the right blall!</li>
+                <br>
+                <li>Ball becomes green if you guess the ball less than the right blall!</li>
+                <br>
+                <li>If you choose the right ball it becomes blue and you won the game</li>
+            </ul> -->
+            <p>⦿ You can select balls from upto 50</p>
+            <p>⦿ You have 1min. to guess the right ball</p>
+            <p>⦿ Ball becomes red if you guess the ball greater than the right ball!</p>
+            <p>⦿ Ball becomes green if you guess the ball less than the right ball!</p>
+            <p>⦿ If you choose the right ball it becomes blue and you won the game</p>
+
+
+            <p>Select ball</p>
+            <input type="range" min="10" max="50" value="20" #selector (change)="setRange(selector.value)" value="0">
+
+            <p>Number of balls:{{selectedRange}}</p>
+            <button class="startButton" (click)="startGame(selector.value, gameBox)">Start</button>
+
+        </div>
+
+        <div [hidden]="hideElement2" class="game-box" #gameBox>
+            <h1 [hidden]="hideElement3">Time left : {{timer}}</h1>
+            <span [hidden]="hideElement3">
+                <button *ngFor="let item of balls; index as i" class="ballButton" value="{{i}}" #button
+                    (click)="buttonClickHandler(button,$event)" [hidden]="hideElement3">{{i}}</button>
+            </span>
+        </div>
+
+    </div>
+</body>
